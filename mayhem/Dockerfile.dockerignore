@@ -1,0 +1,10 @@
+# Build context for mayhem/Dockerfile: the full repo incl. .git, minus local build outputs.
+build-fuzz/
+build-tests/
+build-*/
+/fuzz_*
+*.o
+*.a
+.DS_Store
+*.swp
+*~

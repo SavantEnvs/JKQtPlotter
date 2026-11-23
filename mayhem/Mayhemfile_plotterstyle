@@ -1,0 +1,9 @@
+project: savantenvs/JKQtPlotter
+target: plotterstyle
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/plotterstyle/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_plotterstyle
+    libfuzzer: true
+    timeout: 10

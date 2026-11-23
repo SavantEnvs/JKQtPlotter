@@ -1,0 +1,9 @@
+project: savantenvs/JKQtPlotter
+target: mathparser
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/mathparser/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_mathparser
+    libfuzzer: true
+    timeout: 2

@@ -1,0 +1,9 @@
+project: savantenvs/JKQtPlotter
+target: csscolor
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/csscolor/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_csscolor
+    libfuzzer: true
+    timeout: 2

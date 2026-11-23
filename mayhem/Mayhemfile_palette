@@ -1,0 +1,9 @@
+project: savantenvs/JKQtPlotter
+target: palette
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/palette/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_palette
+    libfuzzer: true
+    timeout: 5
